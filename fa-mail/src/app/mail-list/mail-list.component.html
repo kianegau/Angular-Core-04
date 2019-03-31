@@ -1,0 +1,19 @@
+<!-- Messages list -->
+<div style=" overflow-y: scroll; display: inline-block; height:250px;width: 85%">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Sender</th>
+      <th>Subject</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let mail of mailLists">
+      <td>{{ mail.from }}</td>
+      <td>{{ mail.subject }}</td>
+      <td>{{ mail.date }}</td>
+    </tr>
+  </tbody>
+  </table>
+</div>

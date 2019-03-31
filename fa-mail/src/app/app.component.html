@@ -59,50 +59,8 @@
       </ul>
       <div class="tab-content py-4">
         <div class="tab-pane active" id="tab1" role="tabpanel">
-          <div class="my-messages">
-            <!-- Show message folders -->
-           
-              <!-- Renders a list of folders -->
-              <div class="folderlist">
-                <ul class="selectlist list-unstyled">
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/inbox"
-                      ><i class="fa"></i>inbox</a
-                    >
-                  </li>
-                  <li class="folder ng-scope selected">
-                    <a class="ng-binding" href="#/mymessages/finance"
-                      ><i class="fa"></i>finance</a
-                    >
-                  </li>
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/travel"
-                      ><i class="fa"></i>travel</a
-                    >
-                  </li>
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/personal"
-                      ><i class="fa"></i>personal</a
-                    >
-                  </li>
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/spam"
-                      ><i class="fa"></i>spam</a
-                    >
-                  </li>
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/drafts"
-                      ><i class="fa"></i>drafts</a
-                    >
-                  </li>
-                  <li class="folder ng-scope">
-                    <a class="ng-binding" href="#/mymessages/sent"
-                      ><i class="fa"></i>sent</a
-                    >
-                  </li>
-                </ul>
-              </div>         
-          </div>
+          <!-- Folder list component -->
+         <router-outlet></router-outlet>    
         </div>
         <div class="tab-pane" id="tab2" role="tabpanel">
           <div class="card border-primary mb-3">
